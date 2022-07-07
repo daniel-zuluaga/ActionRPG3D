@@ -5,12 +5,19 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float moveSpeed;
+    public float JumpForce;
 
     public Rigidbody rig;
 
     void Update()
     {
         Move();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+            
     }
 
     void Move()
@@ -23,6 +30,28 @@ public class Player : MonoBehaviour
         dir.y = rig.velocity.y;
 
         rig.velocity = dir;
+
+    }
+
+    void Jump()
+    {
+        if (CanJump())
+        {
+            rig.AddForce(Vector3.up * JumpForce, ForceMode.Impulse);
+        }
+    }
+
+    bool CanJump()
+    {
+        Ray ray = new Ray(transform.position, Vector3.down);
+        RaycastHit hit;
+
+        if(Physics.Raycast(ray, out hit, 0.1f))
+        {
+            return hit.collider != null;
+        }
+
+        return false;
 
     }
 

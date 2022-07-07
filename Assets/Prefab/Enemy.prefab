@@ -46,6 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b45d1c40aeb4188b3a43fc8673292a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  AttackDistance: 2
+  damage: 6
+  health: 50
+  agent: {fileID: 3954417898361412816}
 --- !u!136 &9090335363681648896
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
         Ray ray = new Ray(transform.position, Vector3.down);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 0.1f))
+        if(Physics.Raycast(ray, out hit, 0.25f))
         {
             return hit.collider != null;
         }

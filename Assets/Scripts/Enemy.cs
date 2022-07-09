@@ -20,12 +20,14 @@ public class Enemy : MonoBehaviour
     {
         if (isDead)
             return;
-
-        if(Vector3.Distance(transform.position, player.transform.position) <= AttackDistance)
+        if (Vector3.Distance(transform.position, player.transform.position) <= AttackDistance)
         {
-            agent.isStopped = false;
-            // Attack code
+            agent.isStopped = true;
 
+            // isAttacking will be disabled 2.66 seconds after each attack.
+
+            if (!isAttacking)
+                Attack();
         }
         else
         {
@@ -33,6 +35,29 @@ public class Enemy : MonoBehaviour
             agent.SetDestination(player.transform.position);
         }
 
+    }
+
+    void Attack()
+    {
+        isAttacking = true;
+
+        Invoke("TryDamage", 1.3f);
+
+        Invoke("DisableIsAttacking", 2.66f);
+    }
+
+    void TryDamage()
+    {
+
+        if (Vector3.Distance(transform.position, player.transform.position) <= AttackDistance)
+        {
+            player.TakeDamage(damage);
+        }
+    }
+
+    void DisableIsAttacking()
+    {
+        isAttacking = false;
     }
 
 }

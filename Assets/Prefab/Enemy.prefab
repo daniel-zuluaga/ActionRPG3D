@@ -49,7 +49,7 @@ MonoBehaviour:
   player: {fileID: 0}
   AttackDistance: 2
   damage: 6
-  health: 80
+  health: 50
   agent: {fileID: 3954417898361412816}
 --- !u!136 &9090335363681648896
 CapsuleCollider:

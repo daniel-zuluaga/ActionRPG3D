@@ -1027,6 +1027,8 @@ MonoBehaviour:
   maxHp: 100
   moveSpeed: 5
   JumpForce: 7
+  attackRange: 1
+  damage: 8
   rig: {fileID: 1233244969}
 --- !u!54 &1233244969
 Rigidbody:

@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     private bool isDead;
 
     public NavMeshAgent agent;
+    public Animator anim;
 
     void Update()
     {
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour
         {
             agent.isStopped = false;
             agent.SetDestination(player.transform.position);
+            anim.SetBool("Runing", true);
         }
 
     }
@@ -40,6 +42,9 @@ public class Enemy : MonoBehaviour
     void Attack()
     {
         isAttacking = true;
+        anim.SetBool("Runing", false);
+        anim.SetTrigger("Attack");
+
 
         Invoke("TryDamage", 1.3f);
 
@@ -68,8 +73,9 @@ public class Enemy : MonoBehaviour
         {
             isDead = true;
             agent.isStopped = true;
-            // disable animations
-
+            anim.SetTrigger("Dying");
+            GetComponent<Collider>().enabled = false;
+            Destroy(gameObject, 5f);
         }
 
     }

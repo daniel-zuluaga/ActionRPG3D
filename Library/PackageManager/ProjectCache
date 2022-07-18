@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637937727090000000
+      ticks: 637937743450000000
     m_Hash: 1249640215
   m_LockFileStatus:
     m_FilePath: /Users/jhonzuluaga/Documents/Proyecto_UNITY/ActionRPG3D/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637937727100000000
+      ticks: 637937745860000000
     m_Hash: 1510045920
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

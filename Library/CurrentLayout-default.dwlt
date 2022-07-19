@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Hierarchy
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -69,7 +69,7 @@ MonoBehaviour:
     y: 0
     width: 1440
     height: 765
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -139,8 +139,8 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 715
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
   controlID: 27
 --- !u!114 &7
@@ -617,15 +617,32 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 5221757984136493725, guid: af709e0e7ce8c4dcaa83079f54e7c9a2, type: 2}
+    - {fileID: 1594184534415805795, guid: a9c19df91f34940f099afea5a3f3e233, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
+    - e00: 0.54868376
       e01: 0
       e02: 0
-      e03: 0
+      e03: -58.4701
       e10: 0
-      e11: 1
+      e11: 0.54868376
       e12: 0
-      e13: 0
+      e13: 19.526482
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.63517034
+      e01: 0
+      e02: 0
+      e03: 67.49664
+      e10: 0
+      e11: 0.63517034
+      e12: 0
+      e13: 21.305649
       e20: 0
       e21: 0
       e22: 1
@@ -635,9 +652,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: af709e0e7ce8c4dcaa83079f54e7c9a2, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: a9c19df91f34940f099afea5a3f3e233, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 5221757984136493725, guid: af709e0e7ce8c4dcaa83079f54e7c9a2, type: 2}
+  - m_Target: {fileID: 1594184534415805795, guid: a9c19df91f34940f099afea5a3f3e233, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -758,7 +775,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ec85000000000000e0130100227e010052b90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

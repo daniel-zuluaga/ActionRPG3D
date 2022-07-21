@@ -97,7 +97,9 @@ public class Player : MonoBehaviour
         curHp -= damageToTake;
 
         // update the UI health bar
+        HealthBarUI.instance.UpdateFill(curHp, maxHp);
 
+        //reset the scene when a die
         if (curHp <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
